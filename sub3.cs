@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Espeleta_ContactTracing
 {
-    public partial class Form1 : Form
+    public partial class sub3 : Form
     {
-        public Form1()
+        public sub3()
         {
             InitializeComponent();
-        }
 
     }
 }

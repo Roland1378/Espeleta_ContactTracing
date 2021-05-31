@@ -1,7 +1,7 @@
 ﻿
 namespace Espeleta_ContactTracing
 {
-    partial class Form1
+    partial class sub2
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Espeleta_ContactTracing
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sub2));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.last_name = new System.Windows.Forms.TextBox();
@@ -58,13 +58,16 @@ namespace Espeleta_ContactTracing
             this.label13 = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.back_main = new System.Windows.Forms.Button();
+            this.search_file = new System.Windows.Forms.Button();
+            this.create_file = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(410, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(411, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(246, 240);
             this.pictureBox1.TabIndex = 0;
@@ -76,9 +79,9 @@ namespace Espeleta_ContactTracing
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 54);
+            this.label1.Size = new System.Drawing.Size(598, 54);
             this.label1.TabIndex = 1;
-            this.label1.Text = "USER INFORMATION";
+            this.label1.Text = "CLOSE CONTACT INFORMATION";
             // 
             // last_name
             // 
@@ -216,7 +219,7 @@ namespace Espeleta_ContactTracing
             this.contact_number.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.contact_number.Location = new System.Drawing.Point(189, 274);
             this.contact_number.Name = "contact_number";
-            this.contact_number.Size = new System.Drawing.Size(244, 34);
+            this.contact_number.Size = new System.Drawing.Size(216, 34);
             this.contact_number.TabIndex = 18;
             this.contact_number.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -236,7 +239,7 @@ namespace Espeleta_ContactTracing
             this.address.Location = new System.Drawing.Point(189, 314);
             this.address.Multiline = true;
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(465, 68);
+            this.address.Size = new System.Drawing.Size(468, 68);
             this.address.TabIndex = 20;
             // 
             // label10
@@ -364,11 +367,50 @@ namespace Espeleta_ContactTracing
             this.label14.TabIndex = 31;
             this.label14.Text = "COVID Test Result";
             // 
-            // Form1
+            // back_main
+            // 
+            this.back_main.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.back_main.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.back_main.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.back_main.Location = new System.Drawing.Point(17, 612);
+            this.back_main.Name = "back_main";
+            this.back_main.Size = new System.Drawing.Size(206, 63);
+            this.back_main.TabIndex = 33;
+            this.back_main.Text = "BACK TO MAIN";
+            this.back_main.UseVisualStyleBackColor = false;
+            // 
+            // search_file
+            // 
+            this.search_file.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.search_file.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.search_file.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.search_file.Location = new System.Drawing.Point(229, 612);
+            this.search_file.Name = "search_file";
+            this.search_file.Size = new System.Drawing.Size(206, 63);
+            this.search_file.TabIndex = 34;
+            this.search_file.Text = "SEARCH FILES";
+            this.search_file.UseVisualStyleBackColor = false;
+            // 
+            // create_file
+            // 
+            this.create_file.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.create_file.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.create_file.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.create_file.Location = new System.Drawing.Point(441, 612);
+            this.create_file.Name = "create_file";
+            this.create_file.Size = new System.Drawing.Size(206, 63);
+            this.create_file.TabIndex = 35;
+            this.create_file.Text = "CREATE FILE";
+            this.create_file.UseVisualStyleBackColor = false;
+            // 
+            // sub2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 603);
+            this.ClientSize = new System.Drawing.Size(666, 687);
+            this.Controls.Add(this.create_file);
+            this.Controls.Add(this.search_file);
+            this.Controls.Add(this.back_main);
             this.Controls.Add(this.result);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.test);
@@ -398,7 +440,7 @@ namespace Espeleta_ContactTracing
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "sub2";
             this.Text = "Contact Tracing App";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -436,6 +478,9 @@ namespace Espeleta_ContactTracing
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox result;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button back_main;
+        private System.Windows.Forms.Button search_file;
+        private System.Windows.Forms.Button create_file;
     }
 }
 
