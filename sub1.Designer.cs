@@ -53,9 +53,9 @@ namespace Espeleta_ContactTracing
             this.last_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.last_meeting = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.places = new System.Windows.Forms.TextBox();
+            this.got_covid = new System.Windows.Forms.ComboBox();
+            this.close_contact = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +72,7 @@ namespace Espeleta_ContactTracing
             this.create_file.TabIndex = 66;
             this.create_file.Text = "CREATE FILE";
             this.create_file.UseVisualStyleBackColor = false;
+            this.create_file.Click += new System.EventHandler(this.create_file_Click);
             // 
             // search_file
             // 
@@ -162,7 +163,7 @@ namespace Espeleta_ContactTracing
             this.sex.Items.AddRange(new object[] {
             "Male",
             "Female",
-            "\'Rather not Say"});
+            "Rather not Say"});
             this.sex.Location = new System.Drawing.Point(188, 233);
             this.sex.Name = "sex";
             this.sex.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -295,38 +296,38 @@ namespace Espeleta_ContactTracing
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // places
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(11, 464);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(645, 34);
-            this.textBox1.TabIndex = 67;
+            this.places.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.places.Location = new System.Drawing.Point(11, 464);
+            this.places.Name = "places";
+            this.places.Size = new System.Drawing.Size(645, 34);
+            this.places.TabIndex = 67;
             // 
-            // last_meeting
+            // got_covid
             // 
-            this.last_meeting.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.last_meeting.FormattingEnabled = true;
-            this.last_meeting.Items.AddRange(new object[] {
+            this.got_covid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.got_covid.FormattingEnabled = true;
+            this.got_covid.Items.AddRange(new object[] {
             "1 day ago",
             "3 days ago",
             "7 days ago",
             "10 days ago",
             "14 days ago",
             "1 month ago"});
-            this.last_meeting.Location = new System.Drawing.Point(228, 389);
-            this.last_meeting.Name = "last_meeting";
-            this.last_meeting.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.last_meeting.Size = new System.Drawing.Size(212, 36);
-            this.last_meeting.TabIndex = 68;
+            this.got_covid.Location = new System.Drawing.Point(228, 389);
+            this.got_covid.Name = "got_covid";
+            this.got_covid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.got_covid.Size = new System.Drawing.Size(212, 36);
+            this.got_covid.TabIndex = 68;
             // 
-            // textBox2
+            // close_contact
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(12, 556);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(645, 34);
-            this.textBox2.TabIndex = 70;
+            this.close_contact.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.close_contact.Location = new System.Drawing.Point(12, 556);
+            this.close_contact.Name = "close_contact";
+            this.close_contact.Size = new System.Drawing.Size(645, 34);
+            this.close_contact.TabIndex = 70;
             // 
             // label12
             // 
@@ -354,10 +355,10 @@ namespace Espeleta_ContactTracing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 687);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.close_contact);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.last_meeting);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.got_covid);
+            this.Controls.Add(this.places);
             this.Controls.Add(this.create_file);
             this.Controls.Add(this.search_file);
             this.Controls.Add(this.back_main);
@@ -414,9 +415,9 @@ namespace Espeleta_ContactTracing
         private System.Windows.Forms.TextBox last_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox last_meeting;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox places;
+        private System.Windows.Forms.ComboBox got_covid;
+        private System.Windows.Forms.TextBox close_contact;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
     }

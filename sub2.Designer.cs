@@ -197,7 +197,7 @@ namespace Espeleta_ContactTracing
             this.sex.Items.AddRange(new object[] {
             "Male",
             "Female",
-            "\'Rather not Say"});
+            "Rather not Say"});
             this.sex.Location = new System.Drawing.Point(189, 232);
             this.sex.Name = "sex";
             this.sex.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -402,6 +402,7 @@ namespace Espeleta_ContactTracing
             this.create_file.TabIndex = 35;
             this.create_file.Text = "CREATE FILE";
             this.create_file.UseVisualStyleBackColor = false;
+            this.create_file.Click += new System.EventHandler(this.create_file_Click);
             // 
             // sub2
             // 

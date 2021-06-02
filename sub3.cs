@@ -16,5 +16,6 @@ namespace Espeleta_ContactTracing
         {
             InitializeComponent();
 
+        }
     }
 }
