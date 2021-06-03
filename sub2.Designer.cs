@@ -378,6 +378,7 @@ namespace Espeleta_ContactTracing
             this.back_main.TabIndex = 33;
             this.back_main.Text = "BACK TO MAIN";
             this.back_main.UseVisualStyleBackColor = false;
+            this.back_main.Click += new System.EventHandler(this.back_main_Click);
             // 
             // search_file
             // 
@@ -390,6 +391,7 @@ namespace Espeleta_ContactTracing
             this.search_file.TabIndex = 34;
             this.search_file.Text = "SEARCH FILES";
             this.search_file.UseVisualStyleBackColor = false;
+            this.search_file.Click += new System.EventHandler(this.search_file_Click);
             // 
             // create_file
             // 

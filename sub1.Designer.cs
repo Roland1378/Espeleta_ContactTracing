@@ -85,6 +85,7 @@ namespace Espeleta_ContactTracing
             this.search_file.TabIndex = 65;
             this.search_file.Text = "SEARCH FILES";
             this.search_file.UseVisualStyleBackColor = false;
+            this.search_file.Click += new System.EventHandler(this.search_file_Click);
             // 
             // back_main
             // 
@@ -97,6 +98,7 @@ namespace Espeleta_ContactTracing
             this.back_main.TabIndex = 64;
             this.back_main.Text = "BACK TO MAIN";
             this.back_main.UseVisualStyleBackColor = false;
+            this.back_main.Click += new System.EventHandler(this.back_main_Click);
             // 
             // label11
             // 
@@ -382,8 +384,9 @@ namespace Espeleta_ContactTracing
             this.Controls.Add(this.last_name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "sub1";
-            this.Text = "sub1";
+            this.Text = "Contact Tracing App";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

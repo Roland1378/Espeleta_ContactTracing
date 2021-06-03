@@ -29,12 +29,14 @@ namespace Espeleta_ContactTracing
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sub3));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.last = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.search_name = new System.Windows.Forms.Button();
             this.user_info = new System.Windows.Forms.TextBox();
+            this.go_main = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,9 +79,9 @@ namespace Espeleta_ContactTracing
             // 
             this.search_name.BackColor = System.Drawing.SystemColors.Highlight;
             this.search_name.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.search_name.Location = new System.Drawing.Point(442, 21);
+            this.search_name.Location = new System.Drawing.Point(442, 12);
             this.search_name.Name = "search_name";
-            this.search_name.Size = new System.Drawing.Size(256, 72);
+            this.search_name.Size = new System.Drawing.Size(256, 49);
             this.search_name.TabIndex = 4;
             this.search_name.Text = "SEARCH NAME";
             this.search_name.UseVisualStyleBackColor = false;
@@ -87,25 +89,39 @@ namespace Espeleta_ContactTracing
             // user_info
             // 
             this.user_info.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.user_info.Location = new System.Drawing.Point(12, 99);
+            this.user_info.Location = new System.Drawing.Point(12, 122);
             this.user_info.Multiline = true;
             this.user_info.Name = "user_info";
-            this.user_info.Size = new System.Drawing.Size(686, 572);
+            this.user_info.Size = new System.Drawing.Size(686, 549);
             this.user_info.TabIndex = 5;
+            // 
+            // go_main
+            // 
+            this.go_main.BackColor = System.Drawing.SystemColors.Highlight;
+            this.go_main.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.go_main.Location = new System.Drawing.Point(442, 67);
+            this.go_main.Name = "go_main";
+            this.go_main.Size = new System.Drawing.Size(256, 49);
+            this.go_main.TabIndex = 6;
+            this.go_main.Text = "BACK TO MAIN";
+            this.go_main.UseVisualStyleBackColor = false;
+            this.go_main.Click += new System.EventHandler(this.go_main_Click);
             // 
             // sub3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 683);
+            this.Controls.Add(this.go_main);
             this.Controls.Add(this.user_info);
             this.Controls.Add(this.search_name);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.last);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "sub3";
-            this.Text = "sub3";
+            this.Text = "Contact Tracing App";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,5 +135,6 @@ namespace Espeleta_ContactTracing
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button search_name;
         private System.Windows.Forms.TextBox user_info;
+        private System.Windows.Forms.Button go_main;
     }
 }

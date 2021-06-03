@@ -17,5 +17,13 @@ namespace Espeleta_ContactTracing
             InitializeComponent();
 
         }
+
+        private void go_main_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            main myForm = new main();
+            myForm.ShowDialog();
+            this.Close();
+        }
     }
 }

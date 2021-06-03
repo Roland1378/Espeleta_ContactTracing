@@ -17,7 +17,7 @@ namespace Espeleta_ContactTracing
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sub1());
+            Application.Run(new main());
         }
     }
 }

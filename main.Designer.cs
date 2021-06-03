@@ -57,17 +57,19 @@ namespace Espeleta_ContactTracing
             this.positive.TabIndex = 5;
             this.positive.Text = "COVID POSITIVE";
             this.positive.UseVisualStyleBackColor = false;
+            this.positive.Click += new System.EventHandler(this.positive_Click);
             // 
             // close_contact
             // 
             this.close_contact.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.close_contact.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.close_contact.Location = new System.Drawing.Point(96, 208);
+            this.close_contact.Location = new System.Drawing.Point(96, 212);
             this.close_contact.Name = "close_contact";
             this.close_contact.Size = new System.Drawing.Size(451, 77);
             this.close_contact.TabIndex = 6;
             this.close_contact.Text = "COVID CLOSE CONTACT";
             this.close_contact.UseVisualStyleBackColor = false;
+            this.close_contact.Click += new System.EventHandler(this.close_contact_Click);
             // 
             // search
             // 
@@ -79,6 +81,7 @@ namespace Espeleta_ContactTracing
             this.search.TabIndex = 7;
             this.search.Text = "SEARCH FILES";
             this.search.UseVisualStyleBackColor = false;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // exit
             // 
@@ -90,6 +93,7 @@ namespace Espeleta_ContactTracing
             this.exit.TabIndex = 8;
             this.exit.Text = "EXIT";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // main
             // 
@@ -101,8 +105,9 @@ namespace Espeleta_ContactTracing
             this.Controls.Add(this.close_contact);
             this.Controls.Add(this.positive);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
-            this.Text = "main";
+            this.Text = "Contact Tracing App";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
