@@ -19,16 +19,18 @@ namespace Espeleta_ContactTracing
         }
         private void create_file_Click(object sender, EventArgs e)
         {
-
             StreamWriter user_info;
             user_info = File.AppendText($"{last_name.Text}" + $"{first_name.Text}.txt");
-            user_info.WriteLine("COVID POSITIVE INFORMATION");
+            user_info.WriteLine("COVID POSITIVE");
             user_info.WriteLine("Name: " + $"{last_name.Text}, " + $"{first_name.Text} " + $"{middle_name.Text}");
             user_info.WriteLine("Birthdate: " + $"{birthdate.Text}");
             user_info.WriteLine("Age: " + $"{age.Text}");
             user_info.WriteLine("Sex: " + $"{sex.Text}");
             user_info.WriteLine("Contact Number: " + $"{contact_number.Text}");
             user_info.WriteLine("Address: " + $"{address.Text}");
+            user_info.WriteLine("Got COVID: " + $"{got_covid.Text }");
+            user_info.WriteLine("Places the user went: " + $"{places.Text}");
+            user_info.WriteLine("Close Contacts: " + $"{close_contact}");
             user_info.Close();
 
             last_name.Text = ""; 
@@ -39,7 +41,9 @@ namespace Espeleta_ContactTracing
             sex.Text = "";
             contact_number.Text = "";
             address.Text = "";
-
+            got_covid.Text = "";
+            places.Text = "";
+            close_contact.Text = ""; 
 
         }
 

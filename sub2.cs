@@ -23,13 +23,18 @@ namespace Espeleta_ContactTracing
 
             StreamWriter user_info;
             user_info = File.AppendText($"{last_name.Text}" + $"{first_name.Text}.txt");
-            user_info.WriteLine("COVID POSITIVE INFORMATION");
+            user_info.WriteLine("COVID CLOSE CONTACT");
             user_info.WriteLine("Name: " + $"{last_name.Text}, " + $"{first_name.Text} " + $"{middle_name.Text}");
             user_info.WriteLine("Birthdate: " + $"{birthdate.Text}");
             user_info.WriteLine("Age: " + $"{age.Text}");
             user_info.WriteLine("Sex: " + $"{sex.Text}");
             user_info.WriteLine("Contact Number: " + $"{contact_number.Text}");
             user_info.WriteLine("Address: " + $"{address.Text}");
+            user_info.WriteLine("Relationship with COVID Positive: " + $"{relationship.Text}");
+            user_info.WriteLine("Last close contact with COVID Positive: " + $"{last_meeting.Text}");
+            user_info.WriteLine("Felt any symptoms in the last 14 days: " + $"{symptoms.Text}");
+            user_info.WriteLine("Took a COVID Test: " + $"{test.Text}");
+            user_info.WriteLine("Test Result: " + $"{result.Text}");
             user_info.Close();
 
             last_name.Text = "";
@@ -40,6 +45,11 @@ namespace Espeleta_ContactTracing
             sex.Text = "";
             contact_number.Text = "";
             address.Text = "";
+            relationship.Text = "";
+            last_meeting.Text = "";
+            symptoms.Text = "";
+            test.Text = "";
+            result.Text = "";
         }
 
         private void search_file_Click(object sender, EventArgs e)
