@@ -33,7 +33,7 @@ namespace Espeleta_ContactTracing
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.last = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.first = new System.Windows.Forms.TextBox();
             this.search_name = new System.Windows.Forms.Button();
             this.user_info = new System.Windows.Forms.TextBox();
             this.go_main = new System.Windows.Forms.Button();
@@ -67,13 +67,13 @@ namespace Espeleta_ContactTracing
             this.last.Size = new System.Drawing.Size(192, 43);
             this.last.TabIndex = 2;
             // 
-            // textBox1
+            // first
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(226, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 43);
-            this.textBox1.TabIndex = 3;
+            this.first.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.first.Location = new System.Drawing.Point(226, 50);
+            this.first.Name = "first";
+            this.first.Size = new System.Drawing.Size(192, 43);
+            this.first.TabIndex = 3;
             // 
             // search_name
             // 
@@ -85,6 +85,7 @@ namespace Espeleta_ContactTracing
             this.search_name.TabIndex = 4;
             this.search_name.Text = "SEARCH NAME";
             this.search_name.UseVisualStyleBackColor = false;
+            this.search_name.Click += new System.EventHandler(this.search_name_Click);
             // 
             // user_info
             // 
@@ -115,7 +116,7 @@ namespace Espeleta_ContactTracing
             this.Controls.Add(this.go_main);
             this.Controls.Add(this.user_info);
             this.Controls.Add(this.search_name);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.first);
             this.Controls.Add(this.last);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -132,7 +133,7 @@ namespace Espeleta_ContactTracing
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox last;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox first;
         private System.Windows.Forms.Button search_name;
         private System.Windows.Forms.TextBox user_info;
         private System.Windows.Forms.Button go_main;

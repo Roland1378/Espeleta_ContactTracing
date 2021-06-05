@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,17 @@ namespace Espeleta_ContactTracing
             main myForm = new main();
             myForm.ShowDialog();
             this.Close();
+        }
+
+        private void search_name_Click(object sender, EventArgs e)
+        {
+            StreamReader readFile;
+            readFile = File.OpenText($"{last.Text}" + $"{first.Text}.txt");
+            while (!readFile.EndOfStream)
+
+                user_info.Text = (readFile.ReadToEnd());
+                first.Text = "";
+                last.Text = "";
         }
     }
 }
